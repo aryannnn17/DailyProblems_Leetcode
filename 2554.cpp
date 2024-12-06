@@ -4,7 +4,8 @@ public:
         int count = 0, sum = 0, curr = 1;
         while (curr <= n) {
             auto check = find(banned.begin(), banned.end(), curr);
-            if (check == banned.end()) {
+            if (check == banned.end()) 
+            {
                 sum += curr;
                 if (sum > maxSum)
                     return count;
