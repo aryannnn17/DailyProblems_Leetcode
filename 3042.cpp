@@ -7,7 +7,6 @@ class Solution {
             return true;
         return false;
     }
-
 public:
     int countPrefixSuffixPairs(vector<string>& words) {
         if (words.size() == 1)
