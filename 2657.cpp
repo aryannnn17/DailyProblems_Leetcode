@@ -1,4 +1,3 @@
-
 class Solution {
 public:
     vector<int> findThePrefixCommonArray(vector<int>& A, vector<int>& B) {
@@ -17,8 +16,6 @@ public:
         return res;
     }
 };
-
-
 
 // class Solution {
 // public:
