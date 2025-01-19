@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool canBeValid(string s, string locked) {
-
         if (s.length() % 2)
             return false;
 
