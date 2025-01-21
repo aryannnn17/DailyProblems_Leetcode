@@ -2,8 +2,7 @@ class Solution {
 #define ll long long
 public:
     long long gridGame(vector<vector<int>>& grid) {
-        ll row1 = accumulate(begin(grid[0]), end(grid[0]), 0LL), row2 = 0;
-        ll R2 = LONG_LONG_MAX;
+        ll row1 = accumulate(begin(grid[0]), end(grid[0]), 0LL), row2 = 0,R2 = LONG_LONG_MAX;
         for (int i = 0; i < grid[0].size(); i++) {
             row1 -= grid[0][i];
             ll path = max(row1, row2);
