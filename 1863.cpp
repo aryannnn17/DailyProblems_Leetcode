@@ -1,7 +1,7 @@
 class Solution {
 public:
     int subsetXORSum(vector<int>& nums) {
-        int total = 0;
+        int ans = 0;
         for (int i = 0; i < nums.size(); ++i) {
             int sum = nums[i];
             for (int j = i + 1; j < nums.size(); ++j) {
@@ -9,6 +9,6 @@ public:
                 total += sum;
             }
         }
-        return total;
+        return ans;
     }
 };
