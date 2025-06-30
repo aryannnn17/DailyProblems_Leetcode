@@ -16,9 +16,9 @@ public:
                 int diff = r - l;
                 ans = (ans % M + power[diff]) % M;
                 l++;
-            } else {
+            } else 
                 r--;
-            }
+            
         }
         return ans;
     }
