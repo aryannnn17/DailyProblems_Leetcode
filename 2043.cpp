@@ -7,32 +7,29 @@ public:
         n = balance.size();
         this->balance = balance;
     }
-    
-    bool transfer(int account1, int account2, long long money) {
-        if(account1 > n || account2 > n || balance[account1-1] < money) {
-            return false;
-        }
 
-        balance[account1 - 1] -= money;
-        balance[account2 - 1] += money;
+    bool transfer(int acc1, int acc2, long long money) {
+        if (acc1 > n || acc2 > n || balance[acc1 - 1] < money) 
+            return false;
+
+        balance[acc1 - 1] -= money;
+        balance[acc2 - 1] += money;
         return true;
     }
-    
-    bool deposit(int account, long long money) {
-        if(account > n)
+
+    bool deposit(int acc, long long money) {
+        if (acc > n)
             return false;
-        
-        balance[account - 1] += money;
+
+        balance[acc - 1] += money;
         return true;
     }
-    
-    bool withdraw(int account, long long money) {
-        if(account > n || balance[account - 1] < money)
+
+    bool withdraw(int acc, long long money) {
+        if (acc > n || balance[acc - 1] < money)
             return false;
-        
-        balance[account - 1] -= money;
+
+        balance[acc - 1] -= money;
         return true;
     }
 };
-
-
